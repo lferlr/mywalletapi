@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qIFVjvVvG80pJuGtFxv3JbUX7pdlvrplR5+jnCTEHQSJmRlJ2M5uXVQskZXjhzgzbBZYQlYQ9Almb113ylZxUw==",
+  "success": true,
+  "projectFilePath": "/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/MyWalletAPI.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/lucasrodrigues/.nuget/packages/flunt/2.0.5/flunt.2.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

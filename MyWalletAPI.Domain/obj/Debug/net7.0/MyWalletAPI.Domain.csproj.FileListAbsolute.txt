@@ -1,0 +1,12 @@
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/bin/Debug/net7.0/MyWalletAPI.Domain.deps.json
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/bin/Debug/net7.0/MyWalletAPI.Domain.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/bin/Debug/net7.0/MyWalletAPI.Domain.pdb
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/obj/Debug/net7.0/MyWalletAPI.Domain.csproj.AssemblyReference.cache
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/obj/Debug/net7.0/MyWalletAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/obj/Debug/net7.0/MyWalletAPI.Domain.AssemblyInfoInputs.cache
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/obj/Debug/net7.0/MyWalletAPI.Domain.AssemblyInfo.cs
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/obj/Debug/net7.0/MyWalletAPI.Domain.csproj.CoreCompileInputs.cache
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/obj/Debug/net7.0/MyWalletAPI.Domain.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/obj/Debug/net7.0/refint/MyWalletAPI.Domain.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/obj/Debug/net7.0/MyWalletAPI.Domain.pdb
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Domain/obj/Debug/net7.0/ref/MyWalletAPI.Domain.dll

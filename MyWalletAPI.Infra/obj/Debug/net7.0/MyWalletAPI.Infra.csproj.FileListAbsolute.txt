@@ -1,0 +1,17 @@
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/bin/Debug/net7.0/MyWalletAPI.Infra.deps.json
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/bin/Debug/net7.0/MyWalletAPI.Infra.runtimeconfig.json
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/bin/Debug/net7.0/MyWalletAPI.Infra.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/bin/Debug/net7.0/MyWalletAPI.Infra.pdb
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/bin/Debug/net7.0/MyWalletAPI.Domain.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/bin/Debug/net7.0/MyWalletAPI.Domain.pdb
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/obj/Debug/net7.0/MyWalletAPI.Infra.csproj.AssemblyReference.cache
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/obj/Debug/net7.0/MyWalletAPI.Infra.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/obj/Debug/net7.0/MyWalletAPI.Infra.AssemblyInfoInputs.cache
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/obj/Debug/net7.0/MyWalletAPI.Infra.AssemblyInfo.cs
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/obj/Debug/net7.0/MyWalletAPI.Infra.csproj.CoreCompileInputs.cache
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/obj/Debug/net7.0/MyWalletAPI.Infra.csproj.CopyComplete
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/obj/Debug/net7.0/MyWalletAPI.Infra.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/obj/Debug/net7.0/refint/MyWalletAPI.Infra.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/obj/Debug/net7.0/MyWalletAPI.Infra.pdb
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/obj/Debug/net7.0/MyWalletAPI.Infra.genruntimeconfig.cache
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI.Infra/obj/Debug/net7.0/ref/MyWalletAPI.Infra.dll
