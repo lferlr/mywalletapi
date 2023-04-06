@@ -36,7 +36,7 @@ public class ExpenseRepository : IExpenseRepository
     {
         return _context.Expenses
             .AsNoTracking()
-            .Where(x => x.UserId == "128e916d-9f7e-439f-8844-061ae658dbf1")
+            //.Where(x => x.UserId == "128e916d-9f7e-439f-8844-061ae658dbf1")
             .OrderBy(x => x.DueDate);
     }
 }

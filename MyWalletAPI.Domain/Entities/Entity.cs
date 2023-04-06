@@ -2,7 +2,7 @@ using Flunt.Notifications;
 
 namespace MyWalletAPI.Domain.Entities;
 
-public class Entity : Notifiable<Notification>
+public class Entity : IEquatable<Entity>
 {
     protected Entity()
     {
