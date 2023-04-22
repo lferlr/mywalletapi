@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using MyWalletAPI.Domain.Handlers;
 using MyWalletAPI.Domain.Repositories;
 using MyWalletAPI.Infra.Context;
@@ -19,6 +21,21 @@ builder.Services.AddDbContext<DataContext>(opt => opt.UseNpgsql(configuration.Ge
 builder.Services.AddTransient<IExpenseRepository, ExpenseRepository>();
 builder.Services.AddTransient<ExpenseHandler, ExpenseHandler>();
 
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.Authority = "https://securetoken.google.com/mywallet-578d1";
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidIssuer = "https://securetoken.google.com/mywallet-578d1",
+            ValidateAudience = true,
+            ValidAudience = "mywallet-578d1",
+            ValidateLifetime = true
+        };
+    });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -36,6 +53,8 @@ app.UseCors(x => x
     .AllowAnyHeader());
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

@@ -47,3 +47,10 @@
 /Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/obj/Debug/net7.0/ref/MyWalletAPI.dll
 /Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/Npgsql.dll
 /Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll

@@ -32,11 +32,18 @@ public class ExpenseRepository : IExpenseRepository
             .FirstOrDefault(x => x.Id == id && x.UserId == user)!;
     }
 
-    public IEnumerable<Expense> GetAll(string user)
+    public IEnumerable<Expense> GetAll()
     {
         return _context.Expenses
             .AsNoTracking()
-            //.Where(x => x.UserId == "128e916d-9f7e-439f-8844-061ae658dbf1")
+            .OrderBy(x => x.DueDate);
+    }
+    
+    public IEnumerable<Expense> GetAllByUser(string user)
+    {
+        return _context.Expenses
+            .AsNoTracking()
+            .Where(x => x.UserId == user)
             .OrderBy(x => x.DueDate);
     }
 }

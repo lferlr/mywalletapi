@@ -4,6 +4,15 @@ public enum Tag
 {
     Casa = 1,
     Carro,
-    Comida,
-    Lazer
+    Alimentacao,
+    Mercado,
+    Lazer,
+    Cartao,
+    Educacao,
+    Farmacia,
+    Cursos,
+    Vestuario,
+    Viagem,
+    Saude,
+    Outros
 }

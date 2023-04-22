@@ -39,4 +39,28 @@ public class ExpenseHandler : Notifiable<Notification>
         // Retorna o resultado
         return new GenericCommandResult(true, "Tarefa salva!", expense);
     }
+    
+    public ICommandResult Handle(UpdateExpenseRequest request)
+    {
+        // Fail Fast Validation
+        if (request.IsValid == false)
+            return new GenericCommandResult(false, "Oop, parece que seu registro está errado!", request.Notifications);
+
+        // Gerar um item
+        var expense = new Expense(
+            request.Category,
+            request.Description,
+            request.Tag,
+            request.Value,
+            DateTime.UtcNow,
+            DateTime.UtcNow,
+            request.Status,
+            request.UserId);
+        
+        // Salvar
+        _repository.Create(expense);
+        
+        // Retorna o resultado
+        return new GenericCommandResult(true, "Tarefa salva!", expense);
+    }
 }
