@@ -21,18 +21,14 @@ builder.Services.AddDbContext<DataContext>(opt => opt.UseNpgsql(configuration.Ge
 builder.Services.AddTransient<IExpenseRepository, ExpenseRepository>();
 builder.Services.AddTransient<ExpenseHandler, ExpenseHandler>();
 
-builder.Services
-    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, c =>
     {
-        options.Authority = "https://securetoken.google.com/mywallet-578d1";
-        options.TokenValidationParameters = new TokenValidationParameters
+        c.Authority = $"https://{builder.Configuration["Auth0:Domain"]}/";
+        c.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = true,
-            ValidIssuer = "https://securetoken.google.com/mywallet-578d1",
-            ValidateAudience = true,
-            ValidAudience = "mywallet-578d1",
-            ValidateLifetime = true
+            ValidAudience = builder.Configuration["Auth0:Audience"],
+            ValidIssuer = builder.Configuration["Auth0:Domain"]
         };
     });
 

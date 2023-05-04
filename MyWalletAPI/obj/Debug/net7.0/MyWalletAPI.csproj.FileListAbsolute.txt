@@ -54,3 +54,4 @@
 /Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
 /Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/lucasrodrigues/dev/Dotnet/MyWalletAPI/MyWalletAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.Google.dll
