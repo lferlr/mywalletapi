@@ -23,5 +23,6 @@ public class ExpenseMap : IEntityTypeConfiguration<Expense>
         builder.Property(x => x.RegistrationDate);
         builder.Property(x => x.Status);
         builder.Property(x => x.UserId);
+        builder.Property(x => x.MethodPayment);
     }
 }

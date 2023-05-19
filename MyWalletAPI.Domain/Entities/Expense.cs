@@ -12,7 +12,8 @@ public class Expense : Entity
         DateTime dueDate, 
         DateTime registrationDate, 
         bool status, 
-        string userId)
+        string userId,
+        Payment methodPayment)
     {
         Category = category;
         Description = description;
@@ -22,6 +23,7 @@ public class Expense : Entity
         RegistrationDate = registrationDate;
         Status = status;
         UserId = userId;
+        MethodPayment = methodPayment;
     }
     
     public string Category { get; set; }
@@ -32,4 +34,5 @@ public class Expense : Entity
     public DateTime RegistrationDate { get; set; }
     public bool Status { get; set; }
     public string UserId { get; set; }
+    public Payment MethodPayment { get; set; }
 }

@@ -2,6 +2,7 @@ using Flunt.Notifications;
 using MyWalletAPI.Domain.Commands;
 using MyWalletAPI.Domain.Commands.Contracts;
 using MyWalletAPI.Domain.Entities;
+using MyWalletAPI.Domain.Enum;
 using MyWalletAPI.Domain.Handlers.Requests;
 using MyWalletAPI.Domain.Repositories;
 
@@ -31,7 +32,8 @@ public class ExpenseHandler : Notifiable<Notification>
             DateTime.UtcNow,
             DateTime.UtcNow,
             request.Status,
-            request.UserId);
+            request.UserId,
+            request.MethodPayment);
         
         // Salvar
         _repository.Create(expense);
@@ -55,7 +57,8 @@ public class ExpenseHandler : Notifiable<Notification>
             DateTime.UtcNow,
             DateTime.UtcNow,
             request.Status,
-            request.UserId);
+            request.UserId,
+            request.MethodPayment);
         
         // Salvar
         _repository.Create(expense);
