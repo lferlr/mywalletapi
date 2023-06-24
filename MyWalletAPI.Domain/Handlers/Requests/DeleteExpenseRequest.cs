@@ -4,9 +4,9 @@ using MyWalletAPI.Domain.Handlers.Requests.Contracts;
 
 namespace MyWalletAPI.Domain.Handlers.Requests;
 
-public class CreateExpenseRequest : Notifiable<Notification>
+public class DeleteExpenseRequest : Notifiable<Notification>
 {
-    public CreateExpenseRequest(
+    public DeleteExpenseRequest(
         string category, 
         string description, 
         Tag tag, 
@@ -27,17 +27,17 @@ public class CreateExpenseRequest : Notifiable<Notification>
         UserId = userId;
         MethodPayment = methodPayment;
         
-        AddNotifications(new CreateExpenseRequestContract(this));
+        AddNotifications(new DeleteExpenseRequestContract(this));
     }
 
     public string Category { get; set; }
     public string Description { get; set; }
     public Tag Tag { get; set; }
     public decimal Value { get; set; }
-    public int Installments { get; set; }
     public DateTime DueDate { get; set; }
     public DateTime RegistrationDate { get; set; }
     public bool Status { get; set; }
     public string UserId { get; set; }
+    public int Installments { get; set; }
     public Payment MethodPayment { get; set; }
 }

@@ -19,11 +19,9 @@ public class ExpenseHandler : Notifiable<Notification>
     
     public ICommandResult Handle(CreateExpenseRequest request)
     {
-        // Fail Fast Validation
         if (request.IsValid == false)
-            return new GenericCommandResult(false, "Oop, parece que seu registro está errado!", request.Notifications);
+            return new GenericCommandResult(false, "Oops, parece que seu registro está errado!", request.Notifications);
 
-            // Gerar um item
         var expense = new Expense(
             request.Category,
             request.Description,
@@ -33,22 +31,19 @@ public class ExpenseHandler : Notifiable<Notification>
             DateTime.UtcNow,
             request.Status,
             request.UserId,
+            request.Installments,
             request.MethodPayment);
-        
-        // Salvar
+
         _repository.Create(expense);
-        
-        // Retorna o resultado
+
         return new GenericCommandResult(true, "Tarefa salva!", expense);
     }
     
     public ICommandResult Handle(UpdateExpenseRequest request)
     {
-        // Fail Fast Validation
         if (request.IsValid == false)
             return new GenericCommandResult(false, "Oop, parece que seu registro está errado!", request.Notifications);
-
-        // Gerar um item
+        
         var expense = new Expense(
             request.Category,
             request.Description,
@@ -58,12 +53,20 @@ public class ExpenseHandler : Notifiable<Notification>
             DateTime.UtcNow,
             request.Status,
             request.UserId,
+            request.Installments,
             request.MethodPayment);
         
-        // Salvar
         _repository.Create(expense);
         
-        // Retorna o resultado
         return new GenericCommandResult(true, "Tarefa salva!", expense);
+    }
+
+    public ICommandResult Handle(Guid idExpense)
+    {
+        var expense = _repository.GetById(idExpense);
+        
+        _repository.Delete(expense);
+        
+        return new GenericCommandResult(true, "Dispesa deletada!", expense);
     }
 }

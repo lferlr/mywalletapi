@@ -6,7 +6,8 @@ public interface IExpenseRepository
 {
     void Create(Expense expense);
     void Update(Expense expense);
-    Expense GetById(Guid id, string user);
+    void Delete(Expense expense);
+    Expense GetById(Guid id);
     IEnumerable<Expense> GetAll();
     IEnumerable<Expense> GetAllByUser(string user);
 }

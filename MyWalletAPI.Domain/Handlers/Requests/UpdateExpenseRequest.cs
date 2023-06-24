@@ -15,6 +15,7 @@ public class UpdateExpenseRequest : Notifiable<Notification>
         DateTime registrationDate, 
         bool status, 
         string userId,
+        int installments,
         Payment methodPayment)
     {
         Category = category;
@@ -25,6 +26,7 @@ public class UpdateExpenseRequest : Notifiable<Notification>
         RegistrationDate = registrationDate;
         Status = status;
         UserId = userId;
+        Installments = installments;
         MethodPayment = methodPayment;
         
         AddNotifications(new UpdateExpenseRequestContract(this));
@@ -38,5 +40,6 @@ public class UpdateExpenseRequest : Notifiable<Notification>
     public DateTime RegistrationDate { get; set; }
     public bool Status { get; set; }
     public string UserId { get; set; }
+    public int Installments { get; set; }
     public Payment MethodPayment { get; set; }
 }

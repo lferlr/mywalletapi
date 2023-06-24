@@ -26,10 +26,10 @@ public class ExpenseRepository : IExpenseRepository
         _context.SaveChanges();
     }
 
-    public Expense GetById(Guid id, string user)
+    public Expense GetById(Guid id)
     {
         return _context.Expenses
-            .FirstOrDefault(x => x.Id == id && x.UserId == user)!;
+            .FirstOrDefault(x => x.Id == id)!;
     }
 
     public IEnumerable<Expense> GetAll()
@@ -45,5 +45,12 @@ public class ExpenseRepository : IExpenseRepository
             .AsNoTracking()
             .Where(x => x.UserId == user)
             .OrderBy(x => x.DueDate);
+    }
+
+    public async void Delete(Expense expense)
+    {
+        // Problema ao tentar excluir uma expense
+        _context.Expenses.Remove(expense);
+        await _context.SaveChangesAsync();
     }
 }

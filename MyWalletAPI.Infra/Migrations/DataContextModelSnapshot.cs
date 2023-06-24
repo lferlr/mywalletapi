@@ -41,6 +41,9 @@ namespace MyWalletAPI.Infra.Migrations
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<int>("Installments")
+                        .HasColumnType("integer");
+
                     b.Property<int>("MethodPayment")
                         .HasColumnType("integer");
 

@@ -16,7 +16,7 @@ public class ExpenseController : ControllerBase
     [HttpGet("GetAll")]
     public IEnumerable<Expense> GetAll([FromServices] IExpenseRepository repository)
     {
-        var user = User.Claims.FirstOrDefault(x => x.Type == "user_id")?.Value;
+        //var user = User.Claims.FirstOrDefault(x => x.Type == "user_id")?.Value;
         return repository.GetAll();
     }
     
@@ -37,14 +37,12 @@ public class ExpenseController : ControllerBase
     [HttpPut("")]
     public GenericCommandResult Update(UpdateExpenseRequest request, [FromServices] ExpenseHandler handler)
     {
-        request.UserId = User.Claims.FirstOrDefault(x => x.Type == "user_id")?.Value;
         return (GenericCommandResult)handler.Handle(request);
     }
     
     [HttpDelete("{idExpense}")]
-    public GenericCommandResult Delete(UpdateExpenseRequest request, [FromServices] ExpenseHandler handler, Guid idExpense)
+    public GenericCommandResult Delete([FromServices] ExpenseHandler handler, Guid idExpense)
     {
-        request.UserId = User.Claims.FirstOrDefault(x => x.Type == "user_id")?.Value;
-        return (GenericCommandResult)handler.Handle(request);
+        return (GenericCommandResult)handler.Handle(idExpense);
     }
 }
