@@ -2,7 +2,9 @@ namespace MyWalletAPI.Domain.Enum;
 
 public enum Payment
 {
-    CartaoDeCredito,
+    CartaoDeCredito = 1,
+    CartaoDeDebito,
     Boleto,
     Pix,
+    Outros
 }
