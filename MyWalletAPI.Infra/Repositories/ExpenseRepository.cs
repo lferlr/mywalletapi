@@ -47,10 +47,9 @@ public class ExpenseRepository : IExpenseRepository
             .OrderBy(x => x.DueDate);
     }
 
-    public async void Delete(Expense expense)
+    public void Delete(Expense expense)
     {
-        // Problema ao tentar excluir uma expense
         _context.Expenses.Remove(expense);
-        await _context.SaveChangesAsync();
+        _context.SaveChanges();
     }
 }

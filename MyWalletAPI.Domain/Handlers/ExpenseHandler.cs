@@ -2,7 +2,6 @@ using Flunt.Notifications;
 using MyWalletAPI.Domain.Commands;
 using MyWalletAPI.Domain.Commands.Contracts;
 using MyWalletAPI.Domain.Entities;
-using MyWalletAPI.Domain.Enum;
 using MyWalletAPI.Domain.Handlers.Requests;
 using MyWalletAPI.Domain.Repositories;
 
@@ -66,7 +65,7 @@ public class ExpenseHandler : Notifiable<Notification>
         var expense = _repository.GetById(idExpense);
         
         _repository.Delete(expense);
-        
+
         return new GenericCommandResult(true, "Dispesa deletada!", expense);
     }
 }
